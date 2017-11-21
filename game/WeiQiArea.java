@@ -29,19 +29,19 @@ public class WeiQiArea extends JPanel{
 	}
 	
 	public void paint(Graphics g) {
+		g.setColor(getBackground());
+		g.fillRect(30, 30, 540, 540);
+		g.setColor(Color.BLACK);
 		for(int i = 30;i <= 570;i += 30)
 			g.drawLine(30,i,570,i);
 		for(int j = 30;j <= 570;j += 30)
 			g.drawLine(j,30,j,570);
-		//five points
 		g.fillOval(117,117,6,6);
 		g.fillOval(117,477,6,6);
 		g.fillOval(477,117,6,6);
 		g.fillOval(477,477,6,6);
 		g.fillOval(297,297,6,6);
-		g.setXORMode(getBackground());
-		g.setColor(getForeground());;
-		g.setColor(Color.orange);
+		g.setColor(getForeground());
 	}
 	
 	class MyMouseListener implements MouseListener, MouseMotionListener {
