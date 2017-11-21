@@ -41,6 +41,10 @@ public class WeiQiArea extends JPanel{
 		g.fillOval(477,117,6,6);
 		g.fillOval(477,477,6,6);
 		g.fillOval(297,297,6,6);
+		g.fillOval(297,117,6,6);
+		g.fillOval(117,297,6,6);
+		g.fillOval(477,297,6,6);
+		g.fillOval(297,477,6,6);
 		g.setColor(getForeground());
 	}
 	
